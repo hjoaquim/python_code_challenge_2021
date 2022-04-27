@@ -14,7 +14,7 @@ def create_series_database_imp(series_title = SERIES_TITLE_GOT):
     if os.path.isfile(path) is True:
         os.remove(path)
     
-    file = open(path, "a")
+    file = open(path, "a+")
     file.write(json.dumps(get_all_episodes_and_build_comment_section(series_title, number_of_seasons), indent=2))
     file.close()
 
