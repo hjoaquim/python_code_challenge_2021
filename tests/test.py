@@ -1,7 +1,7 @@
 import sys
 from fastapi import FastAPI
 from fastapi.testclient import TestClient
-sys.path.insert(0, '/home/hjoaquim/Documents/python_code_challenge_2021')
+sys.path.insert(0, DIR)
 from const import *
 from main import app
 
